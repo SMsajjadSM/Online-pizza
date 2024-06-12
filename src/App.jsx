@@ -3,9 +3,9 @@ import {
   createBrowserRouter,
 } from "react-router-dom";
 import Home from "./ui/Home";
-import Menu,{loader} from "./features/menu/Menu";
-import CreateOrder from "./features/order/CreateOrder";
-import Order from "./features/order/Order";
+import Menu,{loader as loaderMenu} from "./features/menu/Menu";
+import CreateOrder,{action as createOrderAction} from "./features/order/CreateOrder";
+import Order,{loader as loaderOrder} from "./features/order/Order";
 import AppLayout from "./ui/AppLayout";
 import Cart from "./features/cart/Cart";
 import Error from "./ui/Error"
@@ -15,10 +15,10 @@ function App() {
       element: <AppLayout />,
       children: [
         { path: "/", element: <Home /> },
-        { path: "/menu", element: <Menu />,      errorElement:<Error/>,
-          loader: loader},
-        { path: "/order/new", element: <CreateOrder /> },
-        { path: "/order/order:Id", element: <Order /> },
+        { path: "/menu", element: <Menu />,      errorntEleme:<Error/>,
+          loader: loaderMenu},
+        { path: "/order/new", element: <CreateOrder />,action:createOrderAction },
+        { path: "/order/:orderId", element: <Order />, loader:loaderOrder,errorntEleme:<Error/>},
         { path: "/cart", element: <Cart /> },
       ],
     },
