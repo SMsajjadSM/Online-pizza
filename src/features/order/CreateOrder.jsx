@@ -102,6 +102,7 @@ export async function action({ request }) {
 
   if (Object.keys(errors).length > 0) return errors;
   const neworder = await createOrder(order);
+  errors.phone = ''
   return redirect(`/order/${neworder.id}`);
 }
 export default CreateOrder;
