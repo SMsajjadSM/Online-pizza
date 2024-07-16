@@ -2,7 +2,7 @@
 # Online-Pizza website
 Test your React Skills
 
-[Demo of Online-Pizza website](https://smsajjadsm.github.io/React-Quiz/)
+[Demo of Online-Pizza website]()
 ===
 
 
