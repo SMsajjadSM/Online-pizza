@@ -13,7 +13,7 @@ Test your React Skills
 First clone project ...
 
 ```sh
-https://github.com/SMsajjadSM/React-Quiz.git
+https://github.com/SMsajjadSM/Online-pizza.git
 ```
 
 Install the dependencies and devDependencies
