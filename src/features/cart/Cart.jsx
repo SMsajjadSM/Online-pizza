@@ -2,12 +2,14 @@ import LinkButton from "../../ui/LinkButton";
 import Button from "../../ui/Button";
 import CartItem from "./CartItem";
 import { useDispatch, useSelector } from "react-redux";
-import { clearItem, getCart } from "./cartSlice";
+import { clearItem, getCart, getTotalCartQuentity } from "./cartSlice";
 import EmptyCart from "./EmptyCart";
 function Cart() {
   const dispatch = useDispatch();
   const username = useSelector((state) => state.user.userName);
   const cart = useSelector(getCart);
+  const showemptycart = useSelector(getTotalCartQuentity);
+  if (showemptycart <= 0) return <EmptyCart />;
   // if (!cart.lenght) return <EmptyCart />;
   return (
     <div className="px-4 py-3">
@@ -17,7 +19,7 @@ function Cart() {
 
       <ul className="mt-3 divide-y divide-stone-200 border-b">
         {cart.map((item) => (
-          <CartItem item={item} key={item.id  } />
+          <CartItem item={item} key={item.pizzaId} />
         ))}
       </ul>
 
