@@ -1,6 +1,6 @@
 
 # Online-Pizza website
-Test your React Skills
+
 
 [Demo of Online-Pizza website]()
 ===
