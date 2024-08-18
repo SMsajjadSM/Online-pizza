@@ -28,5 +28,5 @@ npm i
 I would appreciate it if you could
 support me by giving me a ⭐
 
-[SMsajjadSM](https://github.com/SMsajjadSM/React-Quiz)
+[SMsajjadSM](https://github.com/SMsajjadSM/online-pizza)
 
