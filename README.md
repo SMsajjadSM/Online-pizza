@@ -11,7 +11,7 @@
 ## Installation
 
 
-First clone project ...
+First step clone project ...
 
 ```sh
 https://github.com/SMsajjadSM/Online-pizza.git
